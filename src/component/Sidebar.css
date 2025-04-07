@@ -1,0 +1,102 @@
+/* Sidebar.css */
+.sidebar {
+    background-color: #ffffff;
+    color: #6C7383;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    width: 315px;
+    box-shadow: 0px 0px 6px 3px #d8d8d8;
+    overflow-y: auto;
+}
+
+/* width */
+.sidebar::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Track */
+.sidebar::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+.sidebar::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+
+.sidebar h2 {
+    color: #1a1a1a;
+    margin-bottom: 30px;
+}
+
+.side-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-menu li {
+    margin-bottom: 10px;
+}
+
+.side-menu li a {
+    color: #adb5bd;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.side-menu li a:hover,
+.side-menu li.active>.nav-link {
+    background-color: #4B49AC;
+    color: #fff;
+}
+
+.submenu {
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.submenu li {
+    margin-bottom: 10px;
+}
+
+.submenu li a {
+    color: #ced4da;
+    font-size: 16px;
+}
+
+.submenu li.active>a {
+    color: #fff;
+}
+
+.sidebar-icon {
+    width: 22px;
+}
+
+@media (max-width:769px) {
+    .sidebar-toggel-button {
+        position: absolute;
+        top: 7px;
+        left: 7px;
+        background-color: #4B49AC;
+        border: 1px solid #4B49AC;
+        display: block !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .sidebar-menu-display {
+        display: block !important;
+    }
+}
