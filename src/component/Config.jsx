@@ -1,6 +1,6 @@
 // Test Api -------------------------------------------------------------------
-export const Test_Api = 'http://143.244.139.153:4500/api/v1/';
-export const Img_Url = 'http://143.244.139.153:4500/';
+export const Test_Api = 'https://daily-quates-main.vercel.app/api/v1/';
+export const Img_Url = 'https://daily-quates-main.vercel.app/';
 
 // Live Api -------------------------------------------------------------------
 export const Live_Api = 'http://192.168.29.108:10/api/v1/';
